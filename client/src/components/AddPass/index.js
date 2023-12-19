@@ -8,7 +8,7 @@ function AddPass() {
     const [userData, setUserData] = useState([]);
 
     const getData = async (user_id) => {
-        const result = await fetch("http://localhost:4000/api/auth/getdata", {
+        const result = await fetch("https://yoga-reg-api.vercel.app/api/auth/getdata", {
             method: "POST",
             body: JSON.stringify({
                 id: user_id,
@@ -73,7 +73,7 @@ function AddPass() {
             icon: "success",
           });
         // const data = await axios.post("http://localhost:4000/api/auth/addPass", formData);
-        const result = await fetch("http://localhost:4000/api/auth/addPass", {
+        const result = await fetch("https://yoga-reg-api.vercel.app/api/auth/addPass", {
             method: "POST",
             body: JSON.stringify(formData),
             headers: {
