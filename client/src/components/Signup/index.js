@@ -35,7 +35,7 @@ const Signup = () => {
 		data1.append('file',file);
 		console.log(data1);
 		try {
-			const url = "http://localhost:4000/api/users";
+			const url = "https://yoga-reg-api.vercel.app/api/users";
 			const { data: res } = await axios.post(url, data1);
 			navigate("/login");
 			console.log(res.message);
