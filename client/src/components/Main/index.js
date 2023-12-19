@@ -13,7 +13,7 @@ const Main = () => {
 
 	});
 	const getData = async (user_id) => {
-		const result = await fetch("http://localhost:4000/api/auth/getdata", {
+		const result = await fetch("https://yoga-reg-api.vercel.app/api/auth/getdata", {
 			method: "POST",
 			body: JSON.stringify({
 				id: user_id,
@@ -56,7 +56,7 @@ const Main = () => {
 
 	const handleUpdate = async (e) => {
 		e.preventDefault()
-		const result = await fetch("http://localhost:4000/api/users/updatedata", {
+		const result = await fetch("https://yoga-reg-api.vercel.app/api/users/updatedata", {
 			method: "POST",
 			body: JSON.stringify({
 				userUpdatedData: userData,
