@@ -26,6 +26,8 @@ const Signup = () => {
 	};
 
 	const handleSubmit = async (e) => {
+
+		alert('Hello');
 		e.preventDefault();
 		let data1= new FormData();
 		data1.append('firstName', data.firstName);
